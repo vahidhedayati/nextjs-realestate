@@ -1,3 +1,62 @@
+
+## Next.js RealEstate app based on https://www.youtube.com/watch?v=y47gYvXchXM 
+
+## Data set
+Going to use rapidApi to feed data into this app `https://rapidapi.com/` visit site and sign up using gmail or something.
+
+## creating app
+
+Node needs to be above 12.x. Install nvm and using nvm:
+
+```
+nvm install  v14.18.2
+mkdir realestate 
+cd realestate
+npx create-next-app@latest ./
+
+```
+
+using Visual studio code, inside this folder run:
+```
+code . 
+```
+
+Now in the GUI right click in file area on the LHS and choose new file call file `.babelrc`
+.babelrc file:
+```
+{
+  "presets": ["next/babel"],
+  "plugins": []
+}
+```
+
+inside console / terminal run:
+ ```
+ 
+ npm install @chakra-ui/react @emotion/react @emotion/styled axios framer-motion millify nprogress react-horizontal-scrolling-menu
+
+ ```
+
+Using visual studio clean up pages/index.js (should end up like this):
+```
+
+export default function Home() {
+  return (
+    <div>
+    
+    </div>
+  )
+}
+
+```
+
+
+
+
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -32,3 +91,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# nextjs-realestate
